@@ -11,7 +11,20 @@
     // Labels - CardViews
     <string name="cv_hdr_txt">Header</string>
 
-    //Button labels -
+    <string name="jan_prg_lbl">January: </string>
+    <string name="feb_prg_lbl">February: </string>
+    <string name="mar_prg_lbl">March: </string>
+    <string name="apr_prg_lbl">April: </string>
+    <string name="may_prg_lbl">May: </string>
+    <string name="jun_prg_lbl">June: </string>
+    <string name="jul_prg_lbl">July: </string>
+    <string name="aug_prg_lbl">August: </string>
+    <string name="sep_prg_lbl">September: </string>
+    <string name="oct_prg_lbl">October: </string>
+    <string name="nov_prg_lbl">November: </string>
+    <string name="dec_prg_lbl">December: </string>
 
+    //Button labels -
+    <string name="view_txt">View</string>
 
 </resources>
