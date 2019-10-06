@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">MileageApp</string>
+    // Labels - Main
+    <string name="app_name">Mileage Tracker</string>
+
+    <string name="c_mth_lbl">Current Month</string>
+
+    <string name="c_yr_lbl">Current Year</string>
+
+    <string name="reports_lbl">Reports</string>
+
+    // Labels - CardViews
+    <string name="cv_hdr_txt">Header</string>
+
+    //Button labels -
+
+
 </resources>

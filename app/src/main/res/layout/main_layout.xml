@@ -1,7 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.example.mileageapp.Main">
+
+    <RelativeLayout
+        android:id="@+id/main_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:text="@string/app_name"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_header">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/current_month"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="15dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/c_mth_lbl"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/months_cv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@id/current_month">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/c_yr_lbl"
+                android:background="@color/colorPrimary"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reports"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="15dp"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@id/months_cv">
+
+            <TextView
+                android:id="@+id/reports_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/reports_lbl"
+                android:background="@color/colorPrimary"/>
+
+        </androidx.cardview.widget.CardView>
 
 
+    </RelativeLayout>
 
 </RelativeLayout>

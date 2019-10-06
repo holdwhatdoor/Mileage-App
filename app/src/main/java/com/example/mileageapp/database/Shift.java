@@ -16,6 +16,7 @@ public class Shift {
     private Date endShift;
     private long startMileage;
     private long endMileage;
+    private long totalMileage;
 
     @Ignore
     public Shift(){}
@@ -66,5 +67,13 @@ public class Shift {
 
     public void setEndMileage(long endMileage) {
         this.endMileage = endMileage;
+    }
+
+    public long getTotalMileage() {
+        return totalMileage;
+    }
+
+    public void setTotalMileage(long totalMileage) {
+        this.totalMileage = totalMileage;
     }
 }

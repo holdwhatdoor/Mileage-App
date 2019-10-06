@@ -18,4 +18,19 @@ public abstract class AppDB extends RoomDatabase{
 
     public abstract ShiftDAO shiftDAO();
 
+    public static synchronized AppDB getInstance(Context context){
+        if(instance == null){
+            synchronized (LOCK){
+                if(instance == null){
+                    instance = Room.databaseBuilder(context.getApplicationContext(), AppDB.class,
+                            Mileage_DB)
+                            .allowMainThreadQueries()
+                            .fallbackToDestructiveMigration()
+                            .build();
+                }
+            }
+        }
+        return instance;
+    }
+
 }
