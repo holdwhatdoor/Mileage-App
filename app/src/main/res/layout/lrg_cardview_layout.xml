@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="400dp"
     android:layout_height="450dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/months_cardview">
 
     <TextView
         android:id="@+id/lg_cv_hdr"
@@ -25,6 +26,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/jan_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -38,18 +40,19 @@
                 <ProgressBar
                     android:id="@+id/prog_jan"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true"/>
 
-                <Button
-                    android:id="@+id/jan_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/jan_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
@@ -68,23 +71,24 @@
                 <ProgressBar
                     android:id="@+id/prog_feb"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true" />
 
-                <Button
-                    android:id="@+id/feb_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/feb_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
-
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/mar_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -98,22 +102,24 @@
                 <ProgressBar
                     android:id="@+id/prog_mar"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true"/>
 
-                <Button
-                    android:id="@+id/mar_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/mar_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/apr_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -127,22 +133,24 @@
                 <ProgressBar
                     android:id="@+id/prog_apr"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true" />
 
-                <Button
-                    android:id="@+id/apr_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/apr_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/may_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -156,22 +164,24 @@
                 <ProgressBar
                     android:id="@+id/prog_may"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true"/>
 
-                <Button
-                    android:id="@+id/may_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/may_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/jun_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -185,22 +195,24 @@
                 <ProgressBar
                     android:id="@+id/prog_jun"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true"/>
 
-                <Button
-                    android:id="@+id/jun_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/jun_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/jul_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -214,22 +226,24 @@
                 <ProgressBar
                     android:id="@+id/prog_jul"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true" />
 
-                <Button
-                    android:id="@+id/jul_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/jul_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/aug_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -244,22 +258,24 @@
                 <ProgressBar
                     android:id="@+id/prog_aug"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true" />
 
-                <Button
-                    android:id="@+id/aug_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/aug_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/sep_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -273,22 +289,24 @@
                 <ProgressBar
                     android:id="@+id/prog_sep"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true"/>
 
-                <Button
-                    android:id="@+id/sep_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/sep_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/oct_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -302,22 +320,24 @@
                 <ProgressBar
                     android:id="@+id/prog_oct"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true" />
 
-                <Button
-                    android:id="@+id/oct_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/oct_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/nov_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -331,22 +351,24 @@
                 <ProgressBar
                     android:id="@+id/prog_nov"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true"/>
 
-                <Button
-                    android:id="@+id/nov_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/nov_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/dec_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -360,18 +382,19 @@
                 <ProgressBar
                     android:id="@+id/prog_dec"
                     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="150dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:clickable="true" />
 
-                <Button
-                    android:id="@+id/dec_vw_btn"
-                    android:layout_width="75dp"
-                    android:layout_height="35dp"
+                <TextView
+                    android:id="@+id/dec_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginRight="15dp"
-                    android:text="@string/view_txt" />
+                    android:text="@string/trips_miles_txt"/>
 
 
             </RelativeLayout>

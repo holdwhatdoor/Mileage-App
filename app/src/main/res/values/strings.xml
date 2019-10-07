@@ -24,7 +24,8 @@
     <string name="nov_prg_lbl">November: </string>
     <string name="dec_prg_lbl">December: </string>
 
+    <string name="trips_miles_txt">Trips/Miles</string>
+
     //Button labels -
-    <string name="view_txt">View</string>
 
 </resources>
